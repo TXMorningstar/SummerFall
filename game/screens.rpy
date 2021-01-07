@@ -13,6 +13,11 @@ style default:
     properties gui.text_properties()
     language gui.language
 
+style outlines_1:
+    properties gui.text_properties()
+    language gui.language
+    outlines [ (absolute(1), "#000", absolute(0), absolute(0)) ]
+
 style input:
     properties gui.text_properties("input", accent=True)
     adjust_spacing False
@@ -149,6 +154,7 @@ style say_label:
     properties gui.text_properties("name", accent=True)
     xalign gui.name_xalign
     yalign 0.5
+    outlines [ (absolute(2), "#000", absolute(0), absolute(0)) ]
 
 style say_dialogue:
     properties gui.text_properties("dialogue")
