@@ -1,4 +1,13 @@
+# 日志和报错文件不需要
 errors.txt
 log.txt
 traceback.txt
-game\screens.rpyc
+
+# 所有后缀为.rpyc的文件不需要
+**/*.rpyc
+
+# 存档目录
+game/saves/
+
+# cache目录
+game/cache/
