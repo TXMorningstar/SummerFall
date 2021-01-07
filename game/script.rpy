@@ -16,9 +16,9 @@ label splashscreen:
 # 点击“开始游戏后开始运行以下脚本”
 label start:
     # hide screen Notebook
-    show screen Notebook("start")
+    # show screen Notebook("start")
     stop sound fadeout 5.0 #停止主界面正在播放的bgm
+    python:
+        P1 = renpy.input("请输入你的名字")
+        P1 = P1.strip() or "吴铭士"
     jump Chapter1 #跳转至章节一的开头
-
-
-jump Chapter1

@@ -22,44 +22,45 @@ init python:
 ## 界面中文本的颜色。
 
 ## 整个界面中使用的强调色，用于标记和突出显示文本。
-define gui.accent_color = '#cc6600'
+define gui.accent_color = '#0099cc'
 
 ## 当既未选中也未悬停时用于文本按钮的颜色。
 define gui.idle_color = '#aaaaaa'
 
 ## 小颜色用于小文本，需要更亮/更暗才能达到相同的效果。
-define gui.idle_small_color = '#888888'
+define gui.idle_small_color = '#aaaaaa'
 
 ## 用于悬停的按钮和滑条的颜色。
-define gui.hover_color = '#cc6600'
+define gui.hover_color = '#66c1e0'
 
 ## 用于选中但非焦点的文本按钮的颜色。当一个按钮为当前屏幕或设置选项值时，会处于
 ## 选中状态。
-define gui.selected_color = '#555555'
+define gui.selected_color = '#ffffff'
 
 ## 用于无法选择的文本按钮的颜色。
-define gui.insensitive_color = '#aaaaaa7f'
+define gui.insensitive_color = '#8888887f'
 
 ## 用于未填充的滑条部分的颜色。这些颜色不直接使用，但在重新生成条形图像文件时使
 ## 用。
-define gui.muted_color = '#e0a366'
-define gui.hover_muted_color = '#eac199'
+define gui.muted_color = '#003d51'
+define gui.hover_muted_color = '#005b7a'
 
 ## 用于对话和菜单选择文本的颜色。
-define gui.text_color = '#404040'
-define gui.interface_text_color = '#404040'
+define gui.text_color = '#ffffff'
+define gui.interface_text_color = '#ffffff'
 
 
 ## 字体和字体大小 #####################################################################
 
 ## 用于游戏内文本的字体。
-define gui.text_font = "SourceHanSans-Light-Lite.ttf"
+# define gui.text_font = "font/TsangerYuMo.ttf"
+define gui.text_font = "font/JiagnXizhuokai.ttf"
 
 ## 用于角色名称的字体。
-define gui.name_text_font = "SourceHanSans-Light-Lite.ttf"
+define gui.name_text_font = "font/TsangerYuMo.ttf"
 
 ## 用于游戏外文本的字体。
-define gui.interface_text_font = "SourceHanSans-Light-Lite.ttf"
+define gui.interface_text_font = "font/TsangerYuMo.ttf"
 
 ## 普通对话文本的大小。
 define gui.text_size = 33
@@ -100,8 +101,8 @@ define gui.textbox_yalign = 1.0
 
 ## 叙述角色名称相对文本框的位置。可以是从左侧或顶部起的整数像素，或设为“0.5”来放
 ## 置到正中。
-define gui.name_xpos = 360
-define gui.name_ypos = 0
+define gui.name_xpos = 250
+define gui.name_ypos = -70
 
 ## 角色名称的水平对齐方式。0.0 为左侧对齐，0.5 为居中显示，而 1.0 为右侧对齐。
 define gui.name_xalign = 0.0
@@ -111,7 +112,7 @@ define gui.namebox_width = None
 define gui.namebox_height = None
 
 ## 包含角色名称的框的边界尺寸，以左、上、右、下顺序排列。
-define gui.namebox_borders = Borders(5, 5, 5, 5)
+define gui.namebox_borders = Borders(24, 8, 24, 12)
 
 ## 若为True，则名称框的背景将被平铺；若为False，则将缩放名称框的背景。
 define gui.namebox_tile = False
@@ -119,11 +120,11 @@ define gui.namebox_tile = False
 
 ## 对话框相对于文本框的位置。可以是相对于文本框从左侧或顶部起的整数像素，或设
 ## 为“0.5”来放置到正中。
-define gui.dialogue_xpos = 402
+define gui.dialogue_xpos = 0.1
 define gui.dialogue_ypos = 75
 
 ## 对话文本的最大宽度（以像素为单位）。
-define gui.dialogue_width = 1116
+define gui.dialogue_width = 1550
 
 ## 对话文本的水平对齐方式。0.0 为左侧对齐，0.5 为居中显示，而 1.0 为右侧对齐。
 define gui.dialogue_text_xalign = 0.0
@@ -452,6 +453,3 @@ init python:
 
         gui.nvl_button_width = 1860
         gui.nvl_button_xpos = 30
-
-
-
