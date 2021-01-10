@@ -17,10 +17,11 @@ label splashscreen:
 label start:
     # hide screen Notebook
     # show screen Notebook("start")
-    stop sound fadeout 5.0 #停止主界面正在播放的bgm
+    stop sound fadeout 3.0 #停止主界面正在播放的bgm
     python:
         P1 = None
         while P1 == None:
             P1 = renpy.input("请输入你的名字")
             P1 = P1.strip() or None
+    call screen OldBuilding()
     jump Chapter1 #跳转至章节一的开头
